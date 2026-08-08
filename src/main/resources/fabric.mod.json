@@ -1,0 +1,23 @@
+﻿{
+  "schemaVersion": 1,
+  "id": "preventoffhand",
+  "version": "${version}",
+  "name": "Prevent Offhand In GUI",
+  "description": "Block offhand swap key (F) when inventory is open and offhand is not empty.",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.preventoffhand.PreventOffhandMod"
+    ]
+  },
+  "mixins": [
+    "preventoffhand.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}
